@@ -22,6 +22,14 @@ function App() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
+  const backgroundStyle = {
+    background: `url('https://st2.depositphotos.com/1036506/9073/i/950/depositphotos_90736754-stock-photo-wedding-invitation-card-design.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+
+  };
+
   function play() {
     new Audio(sound).play();
   }
@@ -67,9 +75,13 @@ function App() {
       </div>
 
       <div className="heart-shape-container">
-  <div className="bg-[rgb(195,147,39)] p-8 rounded heart-shape shadow-md w-[75vw] text-black relative z-20 animate__animated animate__fadeIn">
+  <div className=" p-8 rounded heart-shape shadow-md w-[75vw] text-black relative z-20 animate__animated animate__fadeIn" style={backgroundStyle}>
     <h2 className="text-4xl font-bold mb-6 text-purple-800">Join Us for the Celebration!</h2>
-    <p className="mb-4">
+    <p className="mb-4 font-bold text-[rgb(86,40,37)]">
+      "Two hearts that beat as one." Let's come together and celebrate this
+      beautiful journey of love and commitment.
+    </p>
+    <p className="mb-4 font-semibold from-neutral-950 text-[rgb(86,40,37)] text-base">
       We are thrilled to invite you to the joyous occasion of the engagement of
     </p>
 
@@ -90,24 +102,24 @@ function App() {
     <p className="text-lg font-bold mb-4 text-teal-800">
       Chinmayee Mishra (Chinu) & Abhisek Mishra (Dishu)
     </p>
+   
     <p className="mb-4">
-      "Two hearts that beat as one." Let's come together and celebrate this
-      beautiful journey of love and commitment.
+      <span className="font-semibold text-[rgb(52,22,153)]">Date:-</span>
+       <span className='text-[rgb(86,40,37)] font-bold'>  25th February, 2024 </span>
     </p>
     <p className="mb-4">
-      <span className="font-semibold text-indigo-800">Date:-</span> Feb 25, 2024
+      <span className="font-semibold text-[rgb(52,22,153)]">Time:-</span> 
+      <span className='text-[rgb(86,40,37)] font-semibold'> Eleven o'clock in the morning (11:00 AM )</span>
+
     </p>
-    <p className="mb-4">
-      <span className="font-semibold text-indigo-800">Time:-</span> 11:00 AM
+    <p className="mb-4 text-[rgb(86,40,37)] font-semibold">
+      <span className="font-semibold text-[rgb(52,22,153)]">Venue:-</span> Hotel Sutrupati, Unit 4, Bhubaneswar, Odisha 751001
     </p>
-    <p className="mb-4 text-[rgb(103,212,245)]">
-      <span className="font-semibold text-indigo-800">Venue:-</span> Hotel Sutrupati, Unit 4, Bhubaneswar, Odisha 751001
-    </p>
-    <p className="mb-4">
+    <p className="mb-4 font-bold text-[rgb(86,40,37)]">
       Your presence will make this day even more special, filled with love and
       laughter!
     </p>
-    <div className="text-3xl mb-4 text-red-600 animate__animated animate__fadeIn">
+    <div className="text-3xl mb-4 pt-9 text-[rgba(149,15,0,0.79)] animate__animated animate__fadeIn">
       {days} days {hours} hours {minutes} minutes {seconds} seconds
     </div>
   </div>
