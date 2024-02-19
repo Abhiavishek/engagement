@@ -12,6 +12,8 @@ import image5 from './assets/img5.jpg';
 import image7 from './assets/img7.jpg';
 import image9 from './assets/img9.jpg';
 import image10 from './assets/img10.jpg';
+import backg from './assets/background.jpg';
+import ring from './assets/ring.jpg'
 
 function App() {
   const [days, setDays] = useState(0);
@@ -21,7 +23,7 @@ function App() {
   const [imageHover, setImageHover] = useState(false);
 
   const backgroundStyle = {
-    background: `url('https://st2.depositphotos.com/1036506/9073/i/950/depositphotos_90736754-stock-photo-wedding-invitation-card-design.jpg')`,
+    background: `url('${backg}')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -138,7 +140,7 @@ function App() {
 
       <div className="image-container mb-8 mt-5 animate__animated animate__fadeIn">
         <img
-          src="https://media.istockphoto.com/id/1434652920/photo/newlyweds-put-wedding-rings-on-their-finger-close-up.jpg?s=612x612&w=0&k=20&c=Ycns-hDBoDQXanehIrOvTrD8OMEnFWzNSvJoNNoGoOI="
+          src={ring}
           alt=""
           className="h-[80vh] w-[75vw] object-cover rounded-md shadow-lg"
         />
