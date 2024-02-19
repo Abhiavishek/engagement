@@ -119,7 +119,7 @@ function App() {
       Your presence will make this day even more special, filled with love and
       laughter!
     </p>
-    <div className="text-3xl mb-4 pt-9 text-[rgba(149,15,0,0.79)] animate__animated animate__fadeIn">
+    <div className="text-3xl mb-4 pt-6 text-[rgba(149,15,0,0.79)] animate__animated animate__fadeIn">
       {days} days {hours} hours {minutes} minutes {seconds} seconds
     </div>
   </div>
