@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     // Countdown logic
-    const engagementDate = new Date('2024-02-25T12:00:00');
+    const engagementDate = new Date('2024-02-25T11:00:00');
 
     const updateCountdown = () => {
       const now = new Date().getTime();
